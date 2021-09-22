@@ -1,20 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
-*,*::before,*::after{
+*,
+*::before,
+*::after {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
 }
 
-h1{
+html,
+body {
+   height: 100%;
+}
+
+h1 {
    font-family: 'Barrio', cursive;
    font-size: 5rem;
 }
 
-.--regular, .--regular-bold{
-   font-family: 'Manrope', sans-serif;
-   font-size: 1.25rem;
+.--listbox .ui-listbox-list {
+   width: 20rem !important;
 }
 
-.--regular-bold{
+.--regular,
+.--regular-bold {
+   font-family: 'Manrope', sans-serif;
+   font-size: 1rem;
+}
+
+.--regular-bold {
    font-weight: 500;
+}
+
+
+#_sidebar {
+   height: 100%;
+   min-height: 100vh;
+   min-width: 200px;
 }
