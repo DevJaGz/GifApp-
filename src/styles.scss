@@ -35,5 +35,11 @@ h1 {
 #_sidebar {
    height: 100%;
    min-height: 100vh;
-   min-width: 200px;
+   min-width: 30%;
+   // position: absolute;
+   // z-index: 1;
+
+   // @media screen and (max-width: 720px) {
+   //    min-width: 100%;
+   // }
 }
