@@ -1,14 +1,6 @@
 <div class="flex --regular">
-
-  <div id="_sidebar" class="bg-gray-900 p-3">
-    <h1 class="text-center text-white p-3">{{title}}</h1>
-    <hr class="text-white mb-5">
-    <p-listbox styleClass="--listbox" [options]="roles" [(ngModel)]="selectedRole" optionLabel="name">
-    </p-listbox>
-  </div>
-
+  <app-sidebar></app-sidebar>
   <div class="p-3">
-    {{selectedRole?.name}} - {{selectedRole?.value}}
   </div>
 
 </div>

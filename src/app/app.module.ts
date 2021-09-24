@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DockModule } from 'primeng/dock';
 import { AppComponent } from './app.component';
-import { ListboxModule } from 'primeng/listbox';
-import { FormsModule } from '@angular/forms';
+
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -11,9 +10,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    DockModule,
-    ListboxModule,
-    FormsModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
