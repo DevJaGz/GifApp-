@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { GifsService } from '../../gifs/services/gifs.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,19 +8,21 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./sidebar.component.scss']
 })
 
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
 
   title: string = 'GifApp';
-  items: MenuItem[] = [];
 
-  ngOnInit() {
-    this.items = [{
-      label: 'Menú',
-      items: [
-        { label: 'Item 1', icon: 'pi pi-fw pi-plus' },
-        { label: 'Item 2', icon: 'pi pi-fw pi-download' }
-      ]
-    }]
+  constructor(private gifsService: GifsService) {
+
+  }
+
+  get historial() {
+    return this.gifsService._historial
+  }
+
+
+  message() {
+    console.log("MSG");
   }
 
 }

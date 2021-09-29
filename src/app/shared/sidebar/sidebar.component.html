@@ -1,8 +1,5 @@
 <div id="_sidebar" class="bg-gray-900 p-3">
    <h1 class="text-center text-white p-3">{{title}}</h1>
    <hr class="text-white mb-5">
-   <!-- <p-menu [model]="items"></p-menu> -->
-   <button [ngStyle]="{backgroundColor:'white', color: 'var(--blue-500)'}" type="button" pButton icon="pi pi-bars"
-      label="" (click)="menu.toggle($event)" class="--menu-button"></button>
-   <p-menu #menu [popup]="true" [model]="items" styleClass="--menu"></p-menu>
+   <div *ngFor="let item of historial" class="--menuItem">{{item | titlecase}}</div>
 </div>

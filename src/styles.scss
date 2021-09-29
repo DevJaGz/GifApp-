@@ -3,13 +3,13 @@
 *::before,
 *::after {
    box-sizing: border-box;
-   margin: 0;
-   padding: 0;
 }
 
 html,
 body {
    height: 100%;
+   margin: 0;
+   padding: 0;
 }
 
 h1 {
@@ -54,15 +54,10 @@ h1 {
    font-weight: 500;
 }
 
-
-#_sidebar {
-   height: 100%;
-   min-height: 100vh;
-   min-width: 30%;
-   // position: absolute;
-   // z-index: 1;
-
-   // @media screen and (max-width: 720px) {
-   //    min-width: 100%;
-   // }
+.--menuItem {
+   padding: 1em;
+   background: white;
+   border-radius: 5px;
+   margin: .5em auto;
+   cursor: pointer;
 }
