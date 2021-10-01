@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { ResultadosComponent } from './resultados/resultados.component';
+import { CardModule } from 'primeng/card';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { ResultadosComponent } from './resultados/resultados.component';
   imports: [
     CommonModule,
     InputTextModule,
-    FormsModule
+    FormsModule,
+    CardModule
   ]
 })
 export class GifsModule { }

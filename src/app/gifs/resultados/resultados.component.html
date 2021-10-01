@@ -1,1 +1,14 @@
-<p>resultados works!</p>
+<div class="card">
+   <div class="flex flex-wrap card-container">
+      <p-card *ngFor="let gif of resultados" [header]="gif.title" subheader="Sub Titulo" styleClass="p-card-shadow m-3"
+         [style]="{ maxWidth: '500px'}">
+         <ng-template pTemplate="header">
+            <img alt="Card" src="">
+         </ng-template>
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quibusdam quasi voluptas minima, ea aliquam
+            enim veritatis, deleniti molestias tenetur quo, nulla facere? At excepturi doloribus dolorum vel ipsa
+            veritatis!
+         </p>
+      </p-card>
+   </div>
+</div>

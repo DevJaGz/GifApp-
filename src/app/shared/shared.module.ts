@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { SidebarComponent } from './sidebar/sidebar.component';
-
+import { ButtonModule } from 'primeng/button';
 
 
 @NgModule({
@@ -13,7 +12,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     SidebarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ButtonModule
   ]
 })
 export class SharedModule { }
